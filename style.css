@@ -237,3 +237,60 @@ input[type="checkbox"]:checked::before{
     margin-right: 1px; /* Adjust the spacing between icons and text */
     fill: red /* Change the fill color to your preferred color */
   }
+  /* Your existing CSS styles */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+    }
+
+    .todo {
+        width: 90%;
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+    body {
+        background-size: cover;
+    }
+
+    .todo {
+        width: 95%;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-field {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    ul {
+        height: 10rem;
+    }
+
+    li {
+        padding: 0.8rem;
+    }
+
+    #musicToggle {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Adjust the icon size for smaller screens */
+    .author a svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 3px;
+    }
+}
