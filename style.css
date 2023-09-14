@@ -250,14 +250,16 @@ input[type="checkbox"]:checked::before{
     }
 }
 
-/* Media query for screens smaller than 480px */
-@media (max-width: 480px) {
+/* Your existing CSS styles */
+
+/* Media query for screens similar to iPhone 12 (1170x2532 pixels) */
+@media (max-width: 1170px) {
     body {
-        background-size: cover;
+        background-size: contain;
     }
 
     .todo {
-        width: 95%;
+        width: 90%;
     }
 
     .btn {
@@ -293,4 +295,40 @@ input[type="checkbox"]:checked::before{
         height: 18px;
         margin-right: 3px;
     }
+}
+
+/* Media query for screens smaller than iPhone 12 (375x812 pixels, iPhone portrait) */
+@media (max-width: 375px) {
+    .todo {
+        width: 95%;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .input-field {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+
+    ul {
+        height: 8rem;
+    }
+
+    li {
+        padding: 0.7rem;
+    }
+
+    #musicToggle {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Further adjustments for very small screens */
 }
